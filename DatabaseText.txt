@@ -1,0 +1,41 @@
+create database hotelmanage;
+use hotelmanage;
+create table login ( 
+Username varchar(10),
+Password varchar(10)
+);
+
+create table customerdata(
+id int(10) auto_increment,
+fname varchar(10),
+lname varchar(10),
+gender varchar(7),
+mobile varchar(10),
+adhaar varchar(20),
+email varchar(50),
+primary key(id)
+);
+
+create table roomdetail
+(
+roomid int(5) auto_increment,
+category varchar(15),
+price int(5),
+rooms varchar(5),
+primary key(roomid)
+);
+create table bookingdata
+(
+bookdate varchar(30),
+customerid int(10),
+roomid int(10) auto_increment,
+roomcategory varchar(20),
+price varchar(10),
+rooms varchar(10),
+checkindate varchar(30),
+checkoutdate varchar(30),
+totalamount int(20),
+Primary key(roomid)
+);
+
+
